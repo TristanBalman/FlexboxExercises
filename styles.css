@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- LAYOUT 1 --------------------------------*/
+.layout-1-container {
+  border: 4px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.layout-1-box {
+  border: 4px solid lightgray;
+  width: 100px;
+  height: 100px;
+}
+
+.layout-1-box-small-wrapper {
+  display: flex;
+
+  /*Make sure there's space in the containing parent for it to move!*/
+  align-items: center;
+  /*--------------------------------*/
+}
+
+.layout-1-box-small {
+  border: 4px solid lightgray;
+  width: 50px;
+  height: 50px;
+  margin-left: 24px;
+}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- LAYOUT 2 --------------------------------*/
+
+.layout-2-container {
+  border: 4px solid lightgray;
+  padding: 24px 24px 0px 24px;
+}
+
+/*This class allows us to cap the left and right sides so content doesn't go past a certain point on the page.*/
+.layout-2-row {
+  width: 100%;
+  max-width: 600px;
+
+  /*This allows the child elements to stay centered.*/
+  margin: 0 auto;
+}
+/*--------------------------------*/
+
+.layout-2-title {
+  border: 2px solid lightgray;
+  width: 100%;
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+.layout-2-box-wrapper {
+  display: flex;
+
+  /*Respects the width of the child element. Pushes element on to new line.*/
+  flex-wrap: wrap;
+  /*--------------------------------*/
+
+  justify-content: space-between;
+}
+
+.layout-2-box {
+  border: 4px solid lightgray;
+  width: 30%;
+  height: 100px;
+  margin-bottom: 24px;
+}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- LAYOUT 3 --------------------------------*/
+
+.layout-3-container {
+  border: 4px solid lightgray;
+  padding: 24px 24px 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout-3-box-wrapper {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-3-box {
+  border: 4px solid lightgray;
+  margin-bottom: 24px;
+}
+
+.layout-3-large-box {
+  width: 45%;
+}
+
+.layout-3-box-small {
+  height: 50px;
+}
+
+/*--------------------------------------------------------------------------*/
+/*-------------------------------- LAYOUT 4 --------------------------------*/
+
+.layout-4-container {
+  border: 4px solid lightgray;
+  padding: 24px 24px 0 24px;
+}
+
+.layout-4-row {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout-4-box-wrapper {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-4-large-box {
+  width: 45%;
+}
+
+.layout-4-box {
+  border: 4px solid lightgray;
+  margin-bottom: 24px;
+}
+
+.layout-4-box-tiny-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout-4-box-small {
+  height: 50px;
+}
+
+.layout-4-box-tiny {
+  width: 30%;
+  height: 50px;
+}

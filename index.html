@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Flexbox Practice</title>
+  </head>
+  <body>
+    <!--Layout 1-->
+
+    <h1>Week 1 - Best Practices - Layout #1</h1>
+    <p>
+      Using <b>align-items: center;</b> to ensure that child elements remain
+      centered.
+    </p>
+    <div class="layout-1-container">
+      <div class="layout-1-box"></div>
+      <div class="layout-1-box-small-wrapper">
+        <div class="layout-1-box-small"></div>
+        <div class="layout-1-box-small"></div>
+        <div class="layout-1-box-small"></div>
+      </div>
+    </div>
+    <hr />
+
+    <!--Layout 2-->
+
+    <h1>Week 1 - Best Practices - Layout #2</h1>
+    <p>
+      Using <b>flex-wrap: wrap;</b> to allow child elements of the same parent
+      to go to another row.
+    </p>
+    <div class="layout-2-container">
+      <div class="layout-2-row">
+        <div class="layout-2-box-wrapper">
+          <div class="layout-2-title"></div>
+          <div class="layout-2-box"></div>
+          <div class="layout-2-box"></div>
+          <div class="layout-2-box"></div>
+          <div class="layout-2-box"></div>
+          <div class="layout-2-box"></div>
+          <div class="layout-2-box"></div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!--Layout 3-->
+
+    <h1>Week 1 - Best Practices - Layout #3</h1>
+    <p>
+      Using <b>2 classes in 1 element (div)</b> to allow formatting to stay
+      consist across elements, such as margins.
+    </p>
+    <div class="layout-3-container">
+      <div class="layout-3-box-wrapper">
+        <div class="layout-3-box layout-3-box-small"></div>
+        <div class="layout-3-box layout-3-box-small"></div>
+        <div class="layout-3-box layout-3-box-small"></div>
+      </div>
+      <div class="layout-3-box layout-3-large-box"></div>
+    </div>
+    <hr />
+
+    <!--Layout 4-->
+
+    <h1>Week 1 - Best Practices - Layout #4</h1>
+    <p>
+      Using <b>nested classes</b> to create different child elements within the
+      same parent (tiny boxes).
+    </p>
+    <div class="layout-4-container">
+      <div class="layout-4-row">
+        <div class="layout-4-box-wrapper">
+          <div class="layout-4-box layout-4-box-small"></div>
+          <div class="layout-4-box layout-4-box-small"></div>
+          <div class="layout-4-box-tiny-wrapper">
+            <div class="layout-4-box layout-4-box-tiny"></div>
+            <div class="layout-4-box layout-4-box-tiny"></div>
+            <div class="layout-4-box layout-4-box-tiny"></div>
+          </div>
+        </div>
+        <div class="layout-4-box layout-4-large-box"></div>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
